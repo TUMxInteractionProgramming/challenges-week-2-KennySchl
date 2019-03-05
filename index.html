@@ -2,54 +2,7 @@
 <html lang="en-US">
  <head>
   <title>chatter|app</title>
-  <style>
-     /*
-     Primary Color: #3F51B5
-     Accent Color: #CDDC39
-     Background: Lightgray
-     Text/Channel: White
-     Button Text: Black
-     */
-
-     /*Global Changes*/
-   * {
-     background-color: lightgray;
-     font-family: Arial, Helvetica, sans-serif;
-   }
-   /*Page Layout*/
-   h1 {
-      background-color: #3F51B5;
-      color: #FFFFFF;
-   }
-   small {background-color: #3F51B5;
-   }
-   ul {
-      background-color: #FFFFFF;
-   }
-   li {
-      background-color: #FFFFFF;
-   }
-   p {
-      background-color: #FFFFFF;
-   }
-   button {
-      text-transform: uppercase;
-      padding: 1px;
-   }
-   strong {
-      text-transform: uppercase;
-   }
-   h3 {
-      font-size: medium;
-   }
-   em {
-      font-size:larger;
-   }
-   a {
-      color:black;
-   }
-
-  </style>
+<link rel="stylesheet" href="../../Desktop/Coding CLass/style.css"/>
 </head>
   <body>
 <div style="background-color: #FFFFFF">
@@ -58,73 +11,83 @@
    chatter|app
    </h1>
 <!-- Channels -->	  
-   <ul style="list-style-type: none"> 
-    <li>#Travel <img src="https://ip.lfe.mw.tum.de/sections/star.png" style="background-color:#FFFFFF" alt="Favorite"></li>
-    <li>#PersonalFinance <img src="https://ip.lfe.mw.tum.de/sections/star.png" style="background-color:#FFFFFF" alt="Favorite"></li>
-    <li>#FATFIRE <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" style="background-color:#FFFFFF" alt="Not Favorite"></li>
-    <li>#AnalogPhotography <img src="https://ip.lfe.mw.tum.de/sections/star.png" style="background-color:#FFFFFF" alt="Favorite"></li>
-    <li>#BuySell <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" style="background-color:#FFFFFF" alt="Not Favorite"></li>
+   <ul> 
+    <li class="selected">  #Travel 
+       <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite">
+      </li>
+    <li> #PersonalFinance 
+       <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite">
+      </li>
+    <li> #FATFIRE 
+       <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Not Favorite">
+      </li>
+    <li> #AnalogPhotography 
+       <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite">
+      </li>
+    <li> #BuySell 
+       <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Not Favorite">
+       </li>
    </ul> 
 </div>
 <!-- Buttons -->
-<div style="background-color:white">
-   <span style="background-color:white">
-    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="New"> New</button>
-    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Trending"> Trending</button> 
-    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorites"> Favorites</button>   
+<div id="top-buttons">
+   <span>
+    <button class="selected" type="button"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="New">New</button>
+    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Trending">Trending</button>
+    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorites">Favorites</button>   
    </span>
 </div>
 <!-- Current Channel -->
-<div style="width: 80%">
-   <h1>#Travel <small>by glades.gifts.dove</small></h1>
+<div>
+   <h1>#Travel <small>by glades.gifts.dove <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite"></small></h1>
 </div>
 <!-- Chat Area -->
-<div style="width: 80%">
+<div class="chat-messages my-message">
    <h3>
-     <span>
+     <span class="metadata">
       <strong><a href="https://w3w.co/glades.gifts.dove" target="_blank">glades.gifts.dove</a></strong> 
       Sun, February 24th, 16:00 
       <em>15 min. left</em>
      </span>
    </h3>
       <p>What's everyone's dream vacation?</p>
-      <button type="button" style="background-color: #CDDC39">+5min.</button> 
+      <button type="button" class="message-button">+5min.</button> 
 </div>
 
-<div style="width: 80%"> 
+<div class="chat-messages"> 
    <h3>
-     <span>
+     <span class="metadata">
       <strong><a href="https://w3w.co/reap.underline.chat" target="_blank">reap.underlined.chat</a></strong> 
       Sun, February 24th 16:07 
       <em>7 min. left</em>
      </span>
    </h3>      
      <p>I would love to go to Hawaii!!</p>
-     <button type="button" style="background-color: #CDDC39">+5min.</button> 
+     <button type="button" class="message-button">+5min.</button> 
 </div>
 
-<div style="width: 80%">
+<div class="chat-messages">
    <h3>
-     <span>
+     <span class="metadata">
       <strong><a href="https://w3w.co/over.award.propelled" target="_blank">over.awarding.propelled</a></strong> 
       Sun, February 24th 16:18 
       <em>10 min. left</em>
      </span>
    </h3>      
      <p>My dream trip will be this Summer. I am going to Cairo!!</p>
-     <button type="button" style="background-color: #CDDC39">+5min.</button> 
+     <button type="button" class="message-button">+5min.</button> 
 </div>
 
-<div style="width: 80%">
+<div class="chat-messages">
    <h3>
-     <span>
+     <span class="metadata"> 
       <strong><a href="https://w3w.co/treasured.outdoes.contents" target="_blank"> reasured.outdoes.contents</a></strong> 
       Sun, February 24th 16:25 
       <em>13 min. left</em>
      </span>
    </h3>      
      <p>So many places to pick from how can you choose?</p>
-     <button type="button" style="background-color: #CDDC39">+5min.</button> 
+     <button stype="button" class="message-button">+5min.</button> 
 </div>  
 </body>
 </html>
