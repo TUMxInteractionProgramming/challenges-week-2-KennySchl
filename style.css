@@ -7,97 +7,136 @@
      */
 
      /*Global Changes*/
-   * {
-     background-color: #F5F5F5;
-     font-family: Roboto, Arial, Helvetica, sans-serif;
-     margin: 0;
-     padding: 0;
-   }
-   /*Page Layout*/
-/*App Bars*/
-   h1 {
-      background-color: #3F51B5;
-      color: #FFFFFF;
-   }
-   h1 img {
-      background-color: #3F51B5;
-      padding: 4px 0px;
-   }
-   small {
-      background-color: #3F51B5;
-   }
-/*Channel's List*/
-   ul {
-      background-color: #FFFFFF;
-      list-style-type: none;
-      padding-left: 0;
-   }
-   ul img, img {
-      background-color: #FFFFFF;
-      vertical-align: middle;
-   }
-   li {
-      box-sizing: border-box;
-      background-color: #FFFFFF;
-      height: 48px;
-      padding: 16px;
-      font-size: 16px;
-      border-bottom: 1px solid #F5F5F5;
-   }
-   li.selected{
-      border-left: 4px solid #3F51B5;
-      color: #3F51B5;
-   }
-   #top-buttons button {
-      background-color:white;
-      border: none;
-      font-size: 13px;
-      width: 33%;
-      height: 72px;
-      padding: 16px;
-   }
-   #top-buttons button img {
-      display: block;
-      margin: auto;
-      padding-bottom: 4px;
-   }
-   button.selected {
-   color: #3F51B5;
-   padding-bottom: 4px;
-   border-bottom: 4px solid #3F51B5;
-   }
-   /*Chat Messages*/
-   .chat-messages {
-      width: 80%;
-      margin-left: 2.5%;
-      margin-bottom: 8px;
-   }
-   /*My message left aligned 17.5% */
-   .my-message {
-      margin-left: 17.5%;
-   }
-   /*Time Left*/
-   em {
-      font-size:larger;
-      font-style: normal;
-   }   
-   /*Metadata*/
-   .metadata {
-      font-size: medium;
-   }
-   p {
-      background-color: #FFFFFF;
-      padding: 16px;
-   }
-   button, strong{
-      text-transform: uppercase;
-      padding: 1px;
-   }
-   /* +5 MIN. */
-   .chat-messages .message-button {
-      background-color: #CDDC39;
-      color: black;
-   }
-   .chat-messages a {
-      color:black;
-   }
+     * {
+      background-color: #F5F5F5;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /*Page Layout*/
+ /*App Bars*/
+    h1 {
+       background-color: #3F51B5;
+       color: #FFFFFF;
+       height: 56px;
+       font-size: 20px;
+       font-style: normal;
+       text-align: left;
+       position: relative;
+       padding: 16px 0px;
+    }
+    h1 img {
+       background-color: #3F51B5;
+       position: relative;
+    }
+   /* #app-bar-1 img {
+       position:relative;
+       left: 0px;
+       top: -8px;
+       float: left;
+    }*/
+    #app-bar-2 img {
+       position: relative;
+       top: 0;
+       right: 0;
+       float: right; 
+    }
+    small {
+       background-color: #3F51B5;
+    }
+ /*Channel's List*/
+    ul {
+       background-color: #FFFFFF;
+       list-style-type: none;
+    }
+    ul img, img {
+       background-color: #FFFFFF;
+       vertical-align: middle;
+    }
+    li {
+       box-sizing: border-box;
+       background-color: #FFFFFF;
+       height: 48px;
+       padding: 16px;
+       font-size: 16px;
+       border-bottom: 1px solid #F5F5F5;
+    }
+    li.selected{
+       border-left: 4px solid #3F51B5;
+       color: #3F51B5;
+    }
+    #top-buttons {
+       background-color: white;
+       position: relative;
+       bottom: 90px;
+       width: 100%;
+    }
+    #top-buttons button {
+       background-color:white;
+       border: none;
+       font-size: 13px;
+       width: 33%;
+       height: 72px;
+       padding: 16px;
+    }
+    #top-buttons button img {
+       display: block;
+       margin: auto;
+       padding-bottom: 4px;
+    }
+    button.selected {
+    color: #3F51B5;
+    padding-bottom: 4px;
+    border-bottom: 4px solid #3F51B5;
+    }
+    /*Chat Messages*/
+    .chat-messages {
+       width: 80%;
+       margin-left: 2.5%;
+       margin-bottom: 8px;
+    }
+    /*My message left aligned 17.5% */
+    .my-message {
+       margin-left: 17.5%;
+    }
+    /*Time Left*/
+    em {
+       font-size:larger;
+       font-style: normal;
+    }   
+    /*Metadata*/
+    .metadata {
+       font-size: medium;
+    }
+    p {
+       background-color: #FFFFFF;
+       padding: 16px;
+    }
+    button, strong{
+       text-transform: uppercase;
+       padding: 1px;
+    }
+    /* +5 MIN. */
+    .chat-messages .message-button {
+       background-color: #CDDC39;
+       color: black;
+    }
+    .chat-messages a {
+       color:black;
+    }
+    /*positioning*/
+    #channels {
+     position: absolute;
+     height: 100%;
+     width: 40%;
+     left:0;
+    /*background-color: red;*/ 
+    }
+    #chat {
+       position: absolute;
+       height: 100%;
+       width: 60%;
+       left: 40%;
+       top:0%;
+    }
+ 
